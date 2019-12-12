@@ -19,7 +19,7 @@ To use the example of decompressing Xcode, copy an Xcode xip file to this direct
 Now run a new container with this directory mounted somewhere (like `/tmp` here), and run the sample script:
 
 ```
-docker run -v $(pwd):/tmp /tmp/unpack_xcode.sh
+docker run -v $(pwd):/tmp xip /tmp/unpack_xcode.sh
 ```
 
 You should end up with the Xcode app bundle in the current directory.
