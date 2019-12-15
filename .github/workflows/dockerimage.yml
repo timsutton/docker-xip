@@ -10,5 +10,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag timsutton/xip:$(date +%s)
+
+    - name: Publish to Docker Hub
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: tim/xip
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
