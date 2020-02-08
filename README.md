@@ -23,3 +23,7 @@ docker run -v $(pwd):/tmp xip /tmp/unpack_xcode.sh
 ```
 
 You should end up with the Xcode app bundle in the current directory.
+
+## Extra
+
+It's not directly related to xip files, but this [smartmontools Docker image repo](https://github.com/smartmontools/docker-build) has a nice set of tools set up for doing all the macOS packaging and disk image work.
