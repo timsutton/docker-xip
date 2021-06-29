@@ -12,6 +12,7 @@ RUN apt-get update && \
     libssl-dev \
     libxml2-dev \
     openssl \
+    pigz \
     zlib1g-dev
 
 # build and install xar
